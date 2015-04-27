@@ -1,0 +1,8 @@
+a=eye(100);
+fout = fopen('out.txt','w');
+fprintf(fout,'%d',a);
+fclose(fout);
+
+for i = 1:200
+    a = [zero(i,200); zeros(5,i) ones(5) zeros(5,200-5-i);
+end
